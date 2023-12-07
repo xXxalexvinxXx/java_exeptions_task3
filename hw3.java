@@ -37,7 +37,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
-public class Main {
+public class hw3 {
     public static void main(String[] args) throws IOException {
 
         try {
@@ -93,7 +93,7 @@ public class Main {
             throw new RuntimeException("Неверно введен пол(f -для женского пола, m - для мужского пола)");
         }
 
-        String fileName = "files\\" + surname.toLowerCase() + ".txt";
+        String fileName =  surname.toLowerCase() + ".txt";
         File file = new File(fileName);
         try (FileWriter fileWriter = new FileWriter(file, true)){
             if (file.length() > 0){
